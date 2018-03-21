@@ -1,0 +1,419 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body
+  height: 100%
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: 1.65
+  //font-family: $default-font
+  overflow-x: hidden
+
+.img-responsive
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+::selection
+  background-color: $accent
+  color: #fff
+
+.hidden
+  display: none
+
+.main_head
+  height: 1230px
+  //background-image: url(/img/header_bg.jpg)
+  background-position: center
+  background-size: cover
+  .header_wrap
+    background-image: url(../img/header.png)
+    background-repeat: no-repeat
+    background-position: top center
+
+.homesect
+  padding-top: 150px
+  background-color: #F9F9F9
+  position: relative
+  .section-head
+    margin-bottom: 90px
+    h2
+      text-transform: uppercase
+      text-align: center
+      position: relative
+      font-size: 35px
+      font-family: "RubikBold", Helvetica
+      line-height: 37px
+      &::after
+        position: absolute
+        background-image: url(/img/obvodka.png)
+        content: ''
+        height: 75px
+        width: 710px
+        display: block
+        bottom: -30px
+        left: 50%
+        top: 25%
+        transform: translate(-50%, 0)
+
+.btn
+  color: #ffffff
+  border-radius: 25px
+  border: none
+  width: 190px
+  font-family: "RubikBold", Helvetica
+  box-shadow: 0 5px 3px rgba(51,102,153,1)
+  outline: none
+  padding: 0.5em 1.2em
+  line-height: 35px
+  background-color: $blue
+  &:active
+    //margin-top: 2px
+    box-shadow: 0 4px 1px rgba(51,102,153,1)
+    //padding: .2em 1.6em .1em 1.6em
+.main_head
+  .top_line
+    padding-top: 25px
+    position: relative
+    img
+      padding-top: 9px
+    p.produce
+      font-family: "Rubik Light", Helvetica
+      font-size: 13px
+      text-transform: uppercase
+      float: right
+      position: absolute
+      color: $blue
+      margin-top: 21px
+      padding-left: 0
+      left: 159px
+      top: -2px
+      &::before
+        margin-right: 11px
+        color: $blue
+        content: '|'
+        height: 7px
+        width: 100%
+        //position: absolute
+        top: -6px
+        //background-image: url(img/334.png)
+        background-position: center
+  .phone
+    float: right
+    color: $blue
+    font-size: 25px
+    margin: 5px 17px
+    font-family: "RubikBold", Helvetica
+  .top_btn
+    @extend .btn
+    float: right
+    line-height: 44px
+    background-color: $blue
+  .bot_btn
+    @extend .btn
+
+.header_center
+  margin-top: 160px
+  min-height: 430px
+  text-align: center
+  text-transform: uppercase
+  color: $yllw
+  h1
+    font-weight: 800
+    margin-bottom: 0
+    font-size: 40px
+    display: inline-block
+  p.prod
+    margin: 0
+    color: #ffffff
+    font-family: "Rubik Light", Helvetica
+    font-size: 23px
+  p.opt
+    font-weight: 800
+    margin-bottom: 0
+    font-size: 25px
+    span
+      font-size: 34px
+
+.header_bottom_text
+  text-align: center
+  line-height: 15px
+  span
+    margin-top: 130px
+    font-size: 17px
+    text-transform: uppercase
+    font-weight: 900
+  h2
+    position: relative
+    margin-bottom: 70px
+    top: 30px
+    font-weight: bold
+    font-size: 30px
+
+.top_form
+  text-align: center
+  input
+    padding: 15px 30px
+    border-radius: 40px
+    border: none
+    margin-left: 10px
+    box-shadow: 1px 2px 17px rgba(0,0,0,.3)
+    //box-shadow: 0 5px 3px rgba(51,102,153,1)
+    &:focus
+      box-shadow: 1px 2px 17px rgba(0,0,0,.9)
+    &:hover
+      box-shadow: 1px 2px 17px rgba(0,0,0,.5)
+      transition: .4s ease
+    &.sub
+      color: #000000
+      font-weight: bold
+      background-color: $yllw
+
+.divan
+  text-align: center
+  position: relative
+  top: 100px
+  z-index: 1
+
+.s1-items
+  h3
+    font-family: "RubikBold", Helvetica
+    text-transform: uppercase
+    font-weight: 900
+    line-height: 22px
+  p
+    font-size: 13px
+    margin: 0
+  .s1-item
+    text-align: center
+    margin-bottom: 70px
+
+.s1-adv-text
+  //text-align: center
+  text-transform: uppercase
+
+  h3
+    font-weight: 900
+    line-height: 22px
+    margin-bottom: 90px
+    text-align: center
+
+
+.section_1
+  position: relative
+  //padding-bottom: 72px
+  .r1
+    margin-left: -20px
+    position: relative
+    //max-width: 365px
+    max-height: 284px
+    p
+      position: absolute
+      top: -4px
+      left: 395px
+      font-size: 14px
+      font-family: "RubikBold", Helvetica
+      font-weight: 700
+      text-align: left
+  .r2
+    position: relative
+    left: 214px
+    top: -176px
+    p
+      position: absolute
+      top: 235px
+      left: -152px
+      font-size: 14px
+      font-family: "RubikBold", Helvetica
+      font-weight: 700
+      text-align: right
+
+.squares
+  padding-top: 0
+  margin-bottom: 130px
+  .sq
+    width: 100%
+  .first_row_333, .second_row_333
+    background-color: #333
+  .first_row_c1, .second_row_c1
+    background-color: #c1c1c1
+  .first_row_5c, .second_row_5c
+    background-color: #5c5c5c
+  .col-md-2
+    height: 12em
+
+.main_footer
+  .bot_line
+    padding-bottom: 20px
+    padding-top: 25px
+    position: relative
+    img
+      padding-top: 9px
+    p.produce
+      font-family: "Rubik Light", Helvetica
+      font-size: 13px
+      text-transform: uppercase
+      float: right
+      position: absolute
+      color: $blue
+      margin-top: 21px
+      padding-left: 0
+      left: 159px
+      top: -2px
+      &::before
+        margin-right: 11px
+        color: $blue
+        content: '|'
+        height: 7px
+        width: 100%
+        //position: absolute
+        top: -6px
+        //background-image: url(img/334.png)
+        background-position: center
+  .phone
+    float: right
+    color: $blue
+    font-size: 25px
+    margin: 5px 17px
+    font-family: "RubikBold", Helvetica
+  //.top_btn
+  //  @extend .btn
+  //  float: right
+  //  line-height: 44px
+  //  //background-color: $blue
+
+.delivery
+  padding-bottom: 70px
+  h3
+    font-size: 25px
+    margin: 0
+    line-height: 20px
+    font-family: "RubikBold", Helvetica
+    font-weight: 700
+    text-transform: uppercase
+  p
+    font-size: 20px
+    line-height: 20px
+    font-family: "Rubik Light", Helvetica
+  img
+    margin-right: 50px
+
+.forms
+  background-color: transparentize(#243343, .2)
+  padding: 35px 35px 30px
+  color: #97a4b2
+  font-size: em(14px)
+  border-bottom: #1A222B 4px solid
+  h4
+    color: #fff
+    font-family: "Rubik Light", Helvetica
+    font-size: em(33px)
+    text-transform: none
+    margin: 0
+  p
+    line-height: em(23px)
+    margin-top: 10px
+  label
+    margin-top: 20px
+    margin-bottom: 15px
+    display: block
+    span
+      letter-spacing: 1.5px
+      display: block
+      margin-bottom: 6px
+      color: #778390
+  input
+    display: block
+    width: 100%
+    border: none
+    box-shadow: 0 -3px #1F2A36
+    background-color: #34465A
+    text-indent: 10px
+    padding: 10px 0
+    transition: all .5s ease
+    color: #fff
+    font-family: "Rubik Light", Helvetica
+    font-size: em(20px)
+    &:focus
+      box-shadow: 0 -5px $main-color
+      background-color: #394E65
+  .buttons
+    margin-top: 15px
+
+#callback
+  max-width: 340px
+  margin: auto
+  position: relative
+  h4
+    line-height: em(18px)
+    margin-bottom: 18px
+
+.mfp-forms
+  .forms
+    background-color: rgba(36, 51, 67, 1)
+    box-shadow: 0 0 18px rgba(0,0,0,.5), 0 0 0 5px #243343
+    border: none
+    border-radius: 1px
+  &.mfp-wrap
+    &.mfp-ready
+      opacity: 1
+  .mfp-close
+    color: #fff
+  &.mfp-bg
+    opacity: 0
+    transition: all 0.25s ease-out
+    &.mfp-ready
+      opacity: 0.8
+    &.mfp-removing
+      opacity: 0
+  &.mfp-wrap
+    .mfp-content
+      opacity: 0
+      transition: all 0.25s ease-out
+    &.mfp-ready .mfp-content
+      opacity: 1
+    &.mfp-removing .mfp-content
+      opacity: 0
+
+@import "media"
+// Всегда в конце

@@ -1,0 +1,49 @@
+body {
+  font-size: 13px;
+  min-width: 320px;
+  position: relative;
+  font-family: "OpenSansRegular", sans-serif;
+  overflow-x: hidden;
+}
+.hidden {
+  display: none;
+}
+.navbar-brand {
+  padding: 0;
+  position: relative;
+  z-index: 2;
+  top: 5px;
+}
+.main_head > .navbar {
+  margin-bottom: 0;
+}
+.carousel-inner > .item > a > img {
+  position: relative;
+}
+.carousel-inner .overlay {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(36,36,36,.67);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.main_head ul.navbar-nav {
+  position: relative;
+  z-index: 3;
+}
+.slide_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.carousel-inner .h1 {
+  font-family: "OpenSansBold", sans-serif;
+  line-height: 1.5;
+  margin-top: 0;
+}
